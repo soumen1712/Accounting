@@ -40,15 +40,20 @@
   justify-content:space-between;
 }
 .logo{
-    font-size: 2.5rem;
-    color: red;
+    font-size: 36px;
+    color: #4ba6ff;
     font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
 }
 
 .logo span{
-    font-size: 2.5rem;
-    color:blue;
+    font-size: 36px;
+    color:#125699;
     font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 .navbar .menu-list{
   display: inline-flex;
@@ -58,17 +63,23 @@
 }
 .menu-list li a{
   color:#fff;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 600;
   margin-left: 25px;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   transition:all 0.3s ease;
 }
 .menu-list li a:hover{
-  color:#bf0606;
+  color:#18a2ed;
+  font-weight: bold;
+}
+.content {
+  background:#333333;
 }
 .banner{
-  background:url("images/bg.jpg") no-repeat;
+  background:url("../images/bg.jpg") no-repeat;
   height:100vh;
   background-size:cover;
   background-position:center;
