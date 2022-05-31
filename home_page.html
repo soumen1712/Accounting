@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap" rel="stylesheet">
+    <!-- -----font awesome cdn link----- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Link CSS STYLESHEET -->
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>HOME</title>
+
+</head>
+<body>
+
+        <!----------------  HEADER SECTION ---------------->
+        <!-- <section id="header"> -->
+            <div class="header">
+                <header>
+                    <nav class="nav">
+                        <div>
+                          <img src="images/logo.png" class="logo"alt="Accounting Logo">
+                        </div>
+
+                        <div class="nav-bar">
+                            <a href="">HOME</a>
+                            <a href="#customer">CUSTOMERS</a>
+                            <a href="#product">PRODUCTS</a>
+                            <a href="index.html">LOGOUT</a>
+                        </div>
+
+                    </nav>
+                </header>
+            </div>
+        <!-- </section> -->
+
+        <!-- -----------------Banner----------- -->
+        <section class="banner" id="banner">
+            <div class="content">
+
+            </div>
+        </section>
+
+        <!-- ----------- CUSTOMERS--------------->
+
+            <!-- <section id="customer">
+                  <div class="customers">
+                      <div>
+                           <h3>Add Customers</h3>
+                           <form>
+                               <label for="cname">
+                                    Customer Name:
+                               </label><br>
+                               <input type="text" id="cname" name="customername" value=""><br>
+                               <label for="address">
+                                   Address:
+                               </label><br>
+                               <input type="text" id="address" name="address" value=""><br>
+                               <label for="phone no">
+                                   Phone No:
+                               </label><br>
+                               <input type="text" id="phone" name="Phone" value=""><br>
+                               <button>Save</button>
+                           </form>
+
+                        </div>
+                        <div>
+                          <h3>List Customer</h3>
+                         </div>
+
+                    </div>
+            </section> -->
+
+
+            <!-- --------PRODUCT--------------- -->
+        <!-- <section id="product">
+            <div class="products">
+                <div>
+                    <h3>Add Products</h3>
+                    <form>
+                        <label for="pname">
+                            Product Name:
+                        </label><br>
+                        <input type="text" id="price" name="price" value=" "><br>
+                         <label for="price">
+                          Price:
+                        </label><br>
+                        <input type="text" id="item " name="item" value=" "><br>
+                        <label for="item">
+                            Item:
+                        </label><br>
+                        <input type="text" id="description" name="description" value=" "><br>
+                        <label for="description">
+                            Description:
+                        </label><br>
+                        <input type="text" id="pname" name="pname" value=" "><br>
+                        <button>Submit</button>
+
+
+                    </form>
+
+                </div>
+            </div>
+        </section> -->
+
+        <h1 class="product">Product Details</h1>
+
+        <div class="details" id="product">
+
+            <table  class="billing">
+                <form method="get" action="grocerybill.php" class="product">
+                    <tr><td>Enter Your Name</td> <td><input type="text" name="name"></td></tr>
+                    <tr><td>Enter Mobile No</td> <td><input type="number" name="phone"></td></tr>
+                    <tr><td><b> Choose Products:</b> </td></tr>
+                    <tr><td></td></tr>
+
+                    <tr> <td></td> <td><input type="checkbox" name="item[]" value="Rice">Rice</td>
+                        <td>Rate <input type="text" name="rate[]" value="35/kg"></td>
+                    <td>Quantity <input type="number" name="quantity[]"></td></tr>
+
+                    <tr> <td></td> <td><input type="checkbox" name="item[]" value="Rice">wheat</td>
+                        <td>Rate <input type="text" name="rate[]" value="35/kg"></td>
+                    <td>Quantity <input type="number" name="quantity[]"></td></tr>
+
+                    <tr> <td></td> <td><input type="checkbox" name="item[]" value="Rice">Potato</td>
+                        <td>Rate <input type="text" name="rate[]" value="35/kg"></td>
+                    <td>Quantity <input type="number" name="quantity[]"></td></tr>
+
+                    <tr> <td></td> <td><input type="checkbox" name="item[]" value="Rice">Tomato</td>
+                        <td>Rate <input type="text" name="rate[]" value="35/kg"></td>
+                    <td>Quantity <input type="number" name="quantity[]"></td></tr>
+
+                    <tr> <td></td> <td><input type="checkbox" name="item[]" value="Rice">Chips</td>
+                        <td>Rate <input type="text" name="rate[]" value="35/kg"></td>
+                    <td>Quantity <input type="number" name="quantity[]"></td></tr>
+
+                    <tr> <td></td> <td><input type="checkbox" name="item[]" value="Rice">Sugar</td>
+                        <td>Rate <input type="text" name="rate[]" value="35/kg"></td>
+                    <td>Quantity <input type="number" name="quantity[]"></td></tr>
+
+                    <tr> <td></td> <td><input type="checkbox" name="item[]" value="Rice">Tea</td>
+                        <td>Rate <input type="text" name="rate[]" value="35/kg"></td>
+                    <td>Quantity <input type="number" name="quantity[]"></td></tr>
+
+                    <tr> <td></td> <td><input type="checkbox" name="item[]" value="Rice">Bread</td>
+                        <td>Rate <input type="text" name="rate[]" value="35/kg"></td>
+                    <td>Quantity <input type="number" name="quantity[]"></td></tr>
+
+                    <tr> <td></td> <td><input type="checkbox" name="item[]" value="Rice">Banana</td>
+                        <td>Rate <input type="text" name="rate[]" value="35/kg"></td>
+                    <td>Quantity <input type="number" name="quantity[]"></td></tr>
+
+                    <tr> <td></td> <td><input type="checkbox" name="item[]" value="Rice">Apple</td>
+                        <td>Rate <input type="text" name="rate[]" value="35/kg"></td>
+                    <td>Quantity <input type="number" name="quantity[]"></td></tr>
+
+                    <tr> <td></td> <td><input type="checkbox" name="item[]" value="Rice">Lichi</td>
+                        <td>Rate <input type="text" name="rate[]" value="35/kg"></td>
+                    <td>Quantity <input type="number" name="quantity[]"></td></tr>
+
+                    <tr> <td></td> <td><input type="checkbox" name="item[]" value="Rice">Milk</td>
+                        <td>Rate <input type="text" name="rate[]" value="35/kg"></td>
+                    <td>Quantity <input type="number" name="quantity[]"></td></tr>
+
+                    <tr> <td></td> <td><input type="checkbox" name="item[]" value="Rice">Egg</td>
+                        <td>Rate <input type="text" name="rate[]" value="35/kg"></td>
+                    <td>Quantity <input type="number" name="quantity[]"></td></tr>
+
+                    <tr> <td></td> <td><input type="checkbox" name="item[]" value="Rice">Honey</td>
+                        <td>Rate <input type="text" name="rate[]" value="35/kg"></td>
+                    <td>Quantity <input type="number" name="quantity[]"></td></tr>
+
+                    <tr> <td></td> <td><input type="checkbox" name="item[]" value="Rice">Butter</td>
+                        <td>Rate <input type="text" name="rate[]" value="35/kg"></td>
+                    <td>Quantity <input type="number" name="quantity[]"></td></tr>
+
+                    <tr> <td></td></tr>
+                    <tr><td></td></tr>
+
+                    <tr> <td></td> <td><input type="submit"></td></tr> <tr> <td></td> <td><input type="reset"></td></tr>
+
+                </form>
+            </table>
+
+    </div>
+
+
+
+
+            <!------------- FOOTER SECTION  ---------------------->
+
+
+            <section class="footer">
+
+                <div class="box-container">
+
+                  <div class="box">
+                      <h3>ABOUT</h3>
+                      <P>Accounting, also known as accountancy, is the measurement, processing,
+                          and communication of financial and non financial information about economic entities such as businesses and corporations. </P>
+
+                  </div>
+
+                  <div class="box">
+                      <h3>CONTACT US</h3>
+                      <p><i class="fas fa-phone"></i> 6296226093 | 7864890173 </p>
+                      <p><i class="fas fa-envelope"></i> soumendawn1712@gmail.com</p>
+                      <p><i class="fas fa-map-marker-alt"></i> Subhankarnagar , Pohabagan , Bankura - 722146 , West Bengal , INDIA.</p>
+
+                  </div>
+
+                </div>
+
+          </section>
+
+
+</body>
+</html>

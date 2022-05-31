@@ -1,65 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>Responsive Sticky Navigation Menu</title>
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap" rel="stylesheet">
+    <!-- -----font awesome cdn link----- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Link CSS STYLESHEET -->
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>HOME</title>
+
 </head>
 <body>
-  <nav class="navbar">
-    <div class="content">
-      <a href="index.html" class="logo"> Acco<span>unting</span> </a>
-      <ul class="menu-list">
-        <div class="icon cancel-btn">
-          <i class="fas fa-times"></i>
-        </div>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="login.html">Login</a></li>
-      </ul>
-      <div class="icon menu-btn">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
-  </nav>
-  <div class="banner"></div>
-  <div class="about">
-    <div class="conten">
-      <div class="title">Responsive Sticky Navigation Menu Bar on Scroll</div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit atque consequatur! Iusto distinctio temporibus repellendus labore odit adipisci harum ipsa beatae natus, eum eius, hic aperiam odio! Quasi molestias magnam illo voluptatem iusto ipsam blanditiis, tempore cumque reiciendis quaerat vero tenetur, sequi dolores libero voluptas vitae voluptate placeat dolorum modi ipsa nisi repellat facilis aliquam asperiores. Aut nam repellat harum quas saepe dolorum voluptates ratione, itaque consectetur explicabo a facilis rem mollitia maxime repudiandae fuga reprehenderit, odio cum incidunt labore molestiae quis non perferendis ipsam. Illum, in, deserunt. Ipsa.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit hic excepturi nobis id, eos dolor libero, nam assumenda, at culpa quos perspiciatis ratione ea modi! Natus sapiente a, explicabo sit quisquam eligendi esse provident eos enim doloremque blanditiis aut placeat veniam, libero nostrum quae. Ipsam, iste reprehenderit minima accusantium illo dolorem recusandae, ipsa autem quidem reiciendis a mollitia sit tenetur.</p>
-    </div>
-  </div>
-<section>
-  <div class="">
-    <footer>
 
-    </footer>
-  </div>
-</section>
-  <script type="text/javascript">
-    const body = document.querySelector("body");
-    const navbar = document.querySelector(".navbar");
-    const menuBtn = document.querySelector(".menu-btn");
-    const cancelBtn = document.querySelector(".cancel-btn");
-    menuBtn.onclick = ()=>{
-      navbar.classList.add("show");
-      menuBtn.classList.add("hide");
-      body.classList.add("disabled");
-    }
-    cancelBtn.onclick = ()=>{
-      body.classList.remove("disabled");
-      navbar.classList.remove("show");
-      menuBtn.classList.remove("hide");
-    }
-    window.onscroll = ()=>{
-      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-    }
-  </script>
+        <!----------------  HEADER SECTION ---------------->
+        <!-- <section id="header"> -->
+            <div class="header">
+                <header>
+                    <nav class="nav">
+                        <div>
+                          <img src="images/logo.png" class="logo"alt="Accounting Logo">
+                        </div>
+
+                        <div class="nav-bar">
+                            <a href="">HOME</a>
+                            <a href="login.html">LOGIN</a>
+                            <a href="login.html">REGISTER</a>
+                        </div>
+
+                    </nav>
+                </header>
+            </div>
+        <!-- </section> -->
+
+        <!-- -----------------Banner----------- -->
+        <section class="banner" id="banner">
+            <div class="content">
+
+            </div>
+        </section>
+
+
+            <!------------- FOOTER SECTION  ---------------------->
+
+
+            <section class="footer">
+
+                  <div class="box-container">
+
+                    <div class="box">
+                        <h3>ABOUT</h3>
+                        <P>Accounting, also known as accountancy, is the measurement, processing,
+                            and communication of financial and non financial information about economic entities such as businesses and corporations. </P>
+
+                    </div>
+
+                    <div class="box">
+                        <h3>CONTACT US</h3>
+                        <p><i class="fas fa-phone"></i> 6296226093 | 7864890173 </p>
+                        <p><i class="fas fa-envelope"></i> soumendawn1712@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Subhankarnagar , Pohabagan , Bankura - 722146 , West Bengal , INDIA.</p>
+
+                    </div>
+
+                  </div>
+
+            </section>
+
 
 </body>
 </html>
