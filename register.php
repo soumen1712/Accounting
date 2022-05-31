@@ -10,7 +10,7 @@ $password = $_POST['password'];
   if($conn->connect_error){
     die('Connection Failed :'.$conn->connect_error);
   }else{
-    $stmt = $conn->prepare("insert into register(name,gender,age,mobilenumber,email,userid,password)values (?,?,?,?,?,?,?)");
+    $stmt = $conn->prepare("insert into register(name,mobilenumber,email,password)values (?,?,?,?)");
     $stmt->bind_param("siss",$name,$mobilenumber,$email,$password);
     $stmt->execute();
     echo "<script>
