@@ -20,7 +20,7 @@
 }
 
 /* -----------------banner--------------- */
-.banner{
+.banner1{
     position: relative;
     width: 100%;
     min-height: 90vh;
@@ -29,6 +29,17 @@
     align-items: center;
     background: linear-gradient(rgba(36, 36, 39, 0.8),rgba(32, 32, 36, 0.8)), url(../images/bg.jpg);
     background-size: cover;
+}
+
+.banner{
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(36, 36, 39, 0.3),rgba(32, 32, 36, 0.2)), url(../images/bg.jpg);
+  background-size: cover;
 }
 
 
@@ -40,7 +51,7 @@ nav {
 
   /* -------header color--------- */
 
-  background-color: #e0e0a5;
+  background-color: #ebf8ff;
   /* background:#e9ebef; */
   padding-right: 30px;
 
@@ -74,7 +85,7 @@ footer{
 /* ------------------ product table---------------- */
 
 .product{
-  background-color: #e0e0a5;
+  background-color: #cee5f0;
   text-align: center;
   padding: 20px;
   font-size: 40px;
@@ -82,7 +93,7 @@ footer{
 
 
 .details{
-  background-color: #e0e0a5;
+  background-color: #cee5f0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,8 +106,13 @@ footer{
 }
 
 .billing{
-  border:2px solid;
-  padding: 10px;
+  /* border:2px solid; */
+  padding: 50px;
+  background-color: #cbd7dc;
+  box-shadow: 0 0 30px black;
+  margin-top: 15px;
+  border-radius: 15px;
+
 }
 
 td{
@@ -110,14 +126,15 @@ table{
   align-items: center;
 }
 
+.input{
+  font-size: 16px;
+  padding: 3px;
+}
+
 
 .footer{
-  /* background:#F5EFE5; */
-  /* background:#e9ebef; */
-  /* background-color: #e0e0a5; */
-
                                   /* -------footer color------- */
-  background:rgb(0,123,255,0.6);
+  background-color: #ebf8ff;
   /* background:#C7CED6; */
 
 }
@@ -143,9 +160,8 @@ table{
 .footer .box-container .box p {
   font-size: 18px;
   color: var(--medium-dark-shade-of-gray);
-  padding: .7rem 0;
+  padding: .3rem 0;
   text-align: center;
-  
+
   font-weight: 500;
 }
-
